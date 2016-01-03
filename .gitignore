@@ -1,3 +1,7 @@
 main
 main.pro.user
 build-main-*/
+
+*.o
+*.so
+*.so.*
