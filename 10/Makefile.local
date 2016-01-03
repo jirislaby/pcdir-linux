@@ -1,0 +1,3 @@
+#LDLIBS=-lefence
+
+all: memcheck
