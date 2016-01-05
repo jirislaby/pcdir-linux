@@ -1,8 +1,8 @@
 CFLAGS += -fPIC
 
-all: libmylib.so.1
+all: libmylib.so.1 libmylib.so.1.0.0
 
-main: main.o libmylib.so libmylib.so.1 libmylib.so.1.0.0
+main: main.o libmylib.so
 
 libmylib.so: libmylib.so.1.0.0
 	ln -sf libmylib.so.1.0.0 libmylib.so

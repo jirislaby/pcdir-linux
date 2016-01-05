@@ -2,6 +2,7 @@ main
 main.pro.user
 build-main-*/
 
+*.d
 *.o
 *.so
 *.so.*
