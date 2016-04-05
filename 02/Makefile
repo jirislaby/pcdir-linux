@@ -6,7 +6,7 @@ all: main
 main: main.o
 
 clean:
-	rm -f *.d *.o *.so *.so.* main
+	rm -f *.d *.o *.so *.so.* main $(AUX_BUILD)
 
 %: %.o
 	$(CC) $(LDFLAGS) -o$@ $^ $(LDLIBS)
@@ -18,3 +18,5 @@ clean:
 
 -include Makefile.local
 -include *.d
+
+all: $(AUX_BUILD)
