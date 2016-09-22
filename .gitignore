@@ -5,4 +5,5 @@ build-*-*/
 *.o
 *.so
 *.so.*
+*.swp
 *.pro.user
